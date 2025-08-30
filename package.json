@@ -1,0 +1,35 @@
+{
+  "name": "uber-mcp-backend",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/server.ts",
+    "dev:oauth": "ts-node src/oauth-callback-server.ts",
+    "start": "node dist/server.js",
+    "clean": "rimraf dist",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ws": "^8.18.3",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.19.11",
+    "@types/ws": "^8.18.1",
+    "nodemon": "^3.1.10",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": ["uber", "mcp", "model-context-protocol", "ride-booking", "api"],
+  "author": "",
+  "license": "MIT"
+}
